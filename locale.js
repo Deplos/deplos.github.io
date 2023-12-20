@@ -111,7 +111,7 @@ function changeLinks(locale) {
 
 function pugCompileLocale(locale) {
     return () => {
-        return src("src/pug/pages/*.pug")
+        return src(["src/pug/pages/*.pug","!src/pug/index.pug","!src/pug/404.pug"])
             .pipe(gulp.data(getLocales(locale)))
             .pipe(gulp.pug({}))
             .pipe(gulp.dom(changeLinks(locale)))
@@ -123,5 +123,12 @@ function pugСompileAllLocales() {
     return locales.map((locale) => pugCompileLocale(locale));
 }
 
+function pugCompileIndex() {
+    return src(["src/pug/index.pug", "src/pug/404.pug"])
+        .pipe(gulp.pug({}))
+        .pipe(dest(`dist/`));
+}
+
 module.exports.compileLocale = pugCompileLocale;
 module.exports.compileAllLocales = pugСompileAllLocales;
+module.exports.pugCompileIndex = pugCompileIndex;

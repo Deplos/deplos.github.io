@@ -4,13 +4,14 @@ const gulp = {
     terser: require("gulp-terser"),
 };
 
-const { compileAllLocales, compileLocale } = require("./locale");
+const { compileAllLocales, compileLocale, pugCompileIndex } = require("./locale");
 const { src, dest, watch, parallel, series } = require("gulp");
 
 const jsFiles = "src/js/**/**.js";
 
+
 function pug(done) {
-    return series(...compileAllLocales())(done);
+    return series(...compileAllLocales(), pugCompileIndex)(done);
 }
 
 function stylus() {
@@ -56,8 +57,9 @@ function server() {
 
     const config = [
         [["src/pug/**/*.pug", "src/locales/*.json"], compileLocale("ru")],
-        [jsFiles, js],
-        ["src/stylus/**/*.styl", stylus],
+        [[jsFiles], js],
+        // [["src/pug/404.pug", "src/pug/index.pug"], pugCompileIndex]
+        [["src/stylus/**/*.styl"], stylus],
     ];
 
     config.forEach((args) => watch(...args).on("change", sync.reload));
