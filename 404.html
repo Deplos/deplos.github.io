@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="en"><head>       <title>Deplos</title></head><body> <p>You'll be redirected</p><script>const availableLocales = ["ru", "en"]
+const currentLocale = availableLocales.includes(location.pathname.split("/")[1]) 
+    ? location.pathname.split("/")[1] 
+    : "en"
+
+location.replace(`/${currentLocale}/error.html`)</script></body></html>
