@@ -1,0 +1,160 @@
+extends ../base.pug
+include ../components/form.pug
+include ../components/plan.pug
+
+
+block variables 
+    - var name = "home"
+    - var hasForm = true
+    - var hasPlans = true
+
+block content 
+    section.hero 
+        h1.hero__title(data-anim)= hero.title
+        p.hero__description(data-anim)= hero.description
+        a(href=$helpers.toService("client") class="button", absolute, data-anim)= hero.button
+        img(src="/hero.webp" alt="Servers" width="685" height="455").hero__image
+
+    section.features
+        h2.h2.features__title(data-anim)= features.title
+        .features__list 
+            for feature in features.list 
+                .feature(data-anim)
+                    h3.feature__name= feature.name 
+                    p.feature__description= feature.description
+
+    section.services 
+        mixin serviceMixin(service)
+            .service(data-anim)
+                img.service__icon(src="/services/" + service.id + ".svg", alt=service.id, width="50" height="50")
+                .service__info 
+                    h3.service__name= service.name 
+                    ul.service__types 
+                        for type in service.types 
+                            li.service__type= type
+
+        .services__text(data-anim)
+            h2.h2= ourServices.title
+            p.services__description= ourServices.description
+
+        .services__list 
+            for service in services.slice(0, Math.ceil(services.length / 2))
+                +serviceMixin(service)
+        
+        .services__list 
+            for service in services.slice(Math.ceil(services.length / 2))
+                +serviceMixin(service)
+
+    section.plans 
+        .plans__text 
+            h2.h2(data-anim)= ourPlans.title
+            a(href="/plans.html", data-anim).plans__more= ourPlans.more
+
+        .plans__list 
+            for plan in plans
+                if (plan.popular) 
+                    +plan(plan.id)
+
+    section.blocks 
+        - 
+            var blocksList = [
+                {
+                    id: "panel",
+                    url: $helpers.toService("panel"),
+                },
+                {
+                    id: "partners",
+                    url: "/partners.html"
+                },
+                {
+                    id: "community",
+                    url: media.discord
+                },
+            ]
+
+        for block in blocksList
+            .block(data-anim) 
+                .block__text 
+                    h2.h2= blocks[block.id].title
+                    p.block__description= blocks[block.id].description
+                    a(href=block.url, data-anim).button.block__button= blocks[block.id].button
+
+                img.block__icon(
+                    src="/blocks/" + block.id + ".png", 
+                    alt=block.id, 
+                    width="432" 
+                    height="243"
+                )
+
+    section.comments 
+        h2.h2.h2--center(data-anim)= comments.title
+        - 
+            var commentsList = [
+                {
+                    rating: 7.5,
+                    createdAt: new Date(),
+                    user: {
+                        name: "Sasha",
+                        id: "1018508311676600430",
+                        avatar: "4bd9cef1ac9cb6ab7584b50c840fd168"
+                    }
+                },
+                {
+                    rating: 7.5,
+                    createdAt: new Date(),
+                    user: {
+                        name: "flamecatoff",
+                        id: "999625234497929296",
+                        avatar: "456177f92bacd5111fe12b9f05632513"
+                    }
+                },
+                {
+                    rating: 9,
+                    createdAt: new Date(),
+                    user: {
+                        name: "sgasdg",
+                        id: "973337217424568391",
+                        avatar: "63e0ce05329351de0989d61631629491"
+                    }
+                },
+            ]
+
+        .comments__list 
+            for comment, index in commentsList
+                .comment 
+                    .comment__rating= comment.rating
+                    .comment__info 
+                        .user 
+                            img(
+                                src=`https://cdn.discordapp.com/avatars/${comment.user.id}/${comment.user.avatar}.webp?size=32`, alt=comment.user.name).user__avatar
+                            p.user__name= comment.user.name
+
+                        .comment__date= comment.createdAt.toLocaleDateString()
+                    p.comment__body= comments.comments[index]
+        a(href=media.discord).button= comments.more
+
+    section.faq 
+        h2.h2(data-anim)= faq.title
+        .faq__list 
+            for question in faq.list
+                details.question(data-anim) 
+                    summary.question__question= question.question
+                    p.question__answer= question.answer
+
+
+    section.contacts 
+        .contacts__info(data-anim)
+            h2.h2= contacts.title
+
+            .contacts__media 
+                a(href=media.discord) Discord
+
+        +form({
+            inputs: ["name", "email"],
+            message: contacts.message,
+            button: contacts.button
+        }) 
+
+    section.cta(data-anim) 
+        h2.h2= cta.title
+        a.button.cta__button(href=$helpers.toService("client"))= cta.button

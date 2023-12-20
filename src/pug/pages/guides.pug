@@ -1,0 +1,22 @@
+extends ../base.pug
+
+block variables 
+    - var name = "guides"
+    - var hasJs = true
+
+block content 
+    section.search 
+        h2.search__title(data-anim)= title
+        .input(data-anim)  
+            input(
+                type="search", 
+                id="search", 
+                name="search", 
+                placeholder=" ", 
+                required)
+            label(for="search")= search
+
+    section.guides 
+        h2.guides__not-found= notFound
+
+        

@@ -1,0 +1,13 @@
+block(padding = 20px)
+    padding padding
+    border 1px solid colors.border
+    border-radius 5px
+    transition border-color 0.2s ease-in-out
+
+    &:hover
+        border-color colors.gray
+
+delay(delay)
+    for num in (1..delay)
+        &:nth-child({num})
+            animation-delay anim-delay * num

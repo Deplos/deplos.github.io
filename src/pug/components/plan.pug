@@ -1,0 +1,25 @@
+mixin plan(id)
+    - var plan = plans.find((p) => p.id === id)
+
+    .plan
+        h3.plan__name= plan.name 
+        .plan__price= plan.price 
+        ul.specs.plan__specs
+            each spec, name in plan.specs 
+            
+                if ["private", "vip", "quick"].includes(name)
+                    - var spec = specs[name]
+                
+                if name == "priority"
+                    - var spec = specs.priority[spec]
+                
+                li(class='spec ' + name, 
+                data-priority = name == "priority" ? specs.priority.name : false)= spec
+            
+        - var href = media.discord
+        - var text = specs.buy
+        if (id == "free") 
+            - var href = $helpers.toService("client")
+            - var text = specs.get
+
+        a.button(href=href, data-absolute)= text

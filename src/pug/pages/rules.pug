@@ -1,0 +1,24 @@
+extends ../base.pug
+
+block variables 
+    - var name = "rules"
+
+block content
+    h2.h2.h2--center= title
+    p.rules__updatedAt= updatedAt
+
+    .rules
+        for section in sections 
+            h3= section.title 
+
+            ol
+                for rule in section.rules
+                    if rule.text !== undefined 
+                        li= rule.text 
+                            if rule.list 
+                                ol 
+                                    for item in rule.list 
+                                        li= item
+                    else 
+                        li= rule
+        

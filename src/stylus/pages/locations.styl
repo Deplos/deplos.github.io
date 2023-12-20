@@ -1,0 +1,21 @@
+@import "../abstracts/variables"
+@import "../abstracts/mixins"
+@import "../components/specs"
+
+.locations__list
+    display flex
+    flex-wrap wrap
+    justify-content center
+    margin-top 40px
+    gap 20px
+
+    .location
+        block()
+        min-width 250px
+
+        .spec
+            &.cores 
+                --type: "cores"
+
+                &::after
+                    margin-left 4px

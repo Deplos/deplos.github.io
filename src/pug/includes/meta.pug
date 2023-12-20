@@ -1,0 +1,21 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+meta(name="title", content=$info.name + " — free reliable hosting")
+meta(name="description", 
+    content=description)
+
+meta(property="og:url", content="https://" + $info.url)
+meta(property="og:type", content="website")
+meta(property="twitter:card", content="summary_large_image")
+meta(name="theme-color" content="#070826")
+
+meta(property="og:locale", content="en")
+meta(property="og:site_name", content=$info.name)
+meta(property="og:image", content="/assets/images/meta/banner.jpg")
+meta(property="og:image:alt", content=$info.name + " — free hosting forever")
+
+link(rel="shortcut icon", href="/assets/images/meta/favicon.png", type="image/png")
+link(rel="stylesheet", href="/main.css")
+
+script(src="/script.js", defer) 

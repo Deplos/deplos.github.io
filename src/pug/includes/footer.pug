@@ -1,0 +1,40 @@
+include ../components/logo.pug
+
+footer.footer
+    .footer__content 
+        - 
+            var sections = {
+                legal: ["rules", "privacy"],
+                services: ["panel", "client"],
+                main: ["/", "partners", "plans", "locations", "guides", "support"]
+            }
+
+        .footer__info
+            +logo()
+
+            p.footer__description= footer.description
+
+        each pages, title in sections 
+            .footer__section 
+                h3.footer__title= links.categories[title]
+
+                .footer__links 
+                    for path in pages 
+                        - var href = path 
+                        - var name = links.pages[path]
+
+                        if href !== "/"
+                            - var href = $helpers.toPage(href)
+                        if title === "services"
+                            - var name = links.services[path]
+                            - var href = $helpers.toService(path)
+
+                        
+                        a.footer__link(href=href)= name
+    .copyright 
+        p.copyright__text 2022-2023 #{$info.name}. #{footer.copyright}
+        .media 
+            each link, name in media 
+                a(href=media[name]).media__link 
+                    img.media__icon(src="/icons/" + name + ".svg", alt=name, width="30" height="30")
+

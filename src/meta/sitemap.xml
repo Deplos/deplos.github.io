@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+    <url>
+        <loc>https://deplos.com/en/</loc>
+        <lastmod>2023-04-22T14:37:35+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://deplos.com/en/plans</loc>
+        <lastmod>2023-04-22T14:37:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://deplos.com/en/partners</loc>
+        <lastmod>2023-04-22T14:37:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://deplos.com/en/locations</loc>
+        <lastmod>2023-04-22T14:37:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://deplos.com/en/rules</loc>
+        <lastmod>2023-04-22T14:37:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://deplos.com/en/privacy</loc>
+        <lastmod>2023-04-22T14:37:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://deplos.com/en/support</loc>
+        <lastmod>2023-04-22T14:37:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://deplos.com/ru/</loc>
+        <lastmod>2023-04-22T14:37:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://deplos.com/ru/plans</loc>
+        <lastmod>2023-04-22T14:37:35+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://deplos.com/ru/partners</loc>
+        <lastmod>2023-04-22T14:37:35+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://deplos.com/ru/locations</loc>
+        <lastmod>2023-04-22T14:37:35+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://deplos.com/ru/rules</loc>
+        <lastmod>2023-04-22T14:37:35+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://deplos.com/ru/privacy</loc>
+        <lastmod>2023-04-22T14:37:35+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://deplos.com/ru/support</loc>
+        <lastmod>2023-04-22T14:37:35+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+
+
+</urlset>

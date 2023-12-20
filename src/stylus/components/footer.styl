@@ -1,0 +1,46 @@
+.footer
+    margin-top auto
+
+
+    &__content
+        display flex
+        justify-content space-between
+        align-items start
+        border 1px solid colors.border
+        border-radius 5px
+        padding 20px
+        flex-wrap wrap
+        gap: 20px
+
+    &__description
+        color colors.gray
+        margin-top 20px
+
+    &__section
+    &__info
+        flex 1 1 0
+
+    &__title
+        margin-bottom 20px
+        font-weight 500
+
+    &__links
+        display flex
+        flex-direction column
+        gap: 10px
+
+    &__link
+        color colors.gray
+        transition color 0.2s ease-in
+        
+        &:hover
+            color colors.white
+    
+    .copyright
+        margin-top 20px
+        margin-bottom 20px
+        display flex
+        justify-content space-between
+
+        &__text
+            color colors.gray

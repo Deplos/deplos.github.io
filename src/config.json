@@ -1,0 +1,187 @@
+{
+    "plans": [
+        {
+            "id": "free",
+            "name": "Free",
+            "price": 0,
+            "specs": {
+                "cpu": 90,
+                "ram": 1800,
+                "ssd": 5,
+                "priority": "low"
+            },
+            "popular": true
+        },
+        {
+            "id": "mini",
+            "name": "Mini",
+            "price": 5,
+            "specs": {
+                "cpu": 110,
+                "ram": 2400,
+                "ssd": 10,
+                "priority": "mid",
+                "private": true
+            },
+            "popular": true
+
+        },
+        {
+            "id": "normal",
+            "name": "Normal",
+            "price": 10,
+            "specs": {
+                "cpu": 130,
+                "ram": 3000,
+                "ssd": 15,
+                "priority": "mid",
+                "vip": true,
+                "quick": true,
+                "private": true
+            }
+        },
+        {
+            "id": "alpha",
+            "name": "Alpha",
+            "price": 15,
+            "specs": {
+                "cpu": 130,
+                "ram": 3000,
+                "ssd": 15,
+                "priority": "upper",
+                "vip": true,
+                "quick": true,
+                "private": true
+            },
+            "popular": true
+
+        }
+    ],
+    "locations": [
+        {
+            "name": "Free I",
+            "specs": {
+                "cores": 16,
+                "ram": 65,
+                "ssd": 262
+            }
+        },
+        {
+            "name": "Free II",
+            "specs": {
+                "cores": 16,
+                "ram": 65,
+                "ssd": 262
+            }
+        },
+        {
+            "name": "Free III",
+            "specs": {
+                "cores": 16,
+                "ram": 65,
+                "ssd": 262
+            }
+        },
+        {
+            "name": "Free IV",
+            "specs": {
+                "cores": 4,
+                "ram": 65,
+                "ssd": 262
+            }
+        },
+        {
+            "name": "Free V",
+            "specs": {
+                "cores": 4,
+                "ram": 180,
+                "ssd": 1024
+            }
+        }
+    ],
+    "services": [
+        {
+            "id": "nodejs",
+            "name": "Node.js",
+            "types": [
+                "Discord",
+                "Telegram",
+                "Algorithms"
+            ]
+        },
+        {
+            "id": "minecraft",
+            "name": "Minecraft",
+            "types": [
+                "Vanilla",
+                "Sponge",
+                "Spigot",
+                "Forge",
+                "Fabric",
+                "Custom"
+            ]
+        },
+        {
+            "id": "minecraft",
+            "name": "Minecraft Bedrock",
+            "types": [
+                "Vanilla",
+                "Pmmp",
+                "Nukkit",
+                "PowerNukkit"
+            ]
+        },
+        {
+            "id": "python",
+            "name": "Python",
+            "types": [
+                "Discord",
+                "Telegram",
+                "Algorithms"
+            ]
+        }
+    ],
+    "media": {
+        "discord": "<DISCORD>",
+        "youtube": "<YOUTUBE>",
+        "phone": "<PHONE>"
+    },
+    "creators": [
+        {
+            "id": "elias",
+            "name": "Elias",
+            "avatar": "558693bf564468c597bbb3b9e896f861",
+            "media": {
+                "discord": "914240860101681163"
+            }
+        },
+        {
+            "id": "kreosan",
+            "name": "Kreosan",
+            "avatar": "13f94826facce44b16ccb4f147187632",
+            "media": {
+                "discord": "854823004932014090"
+            }
+        },
+        {
+            "id": "yasin",
+            "name": "Yasin Vegas",
+            "avatar": "c0b7a434d39e742d6d32a9f8e0dcf390",
+            "media": {
+                "discord": "817383783145537556"
+            }
+        },
+        {
+            "id": "vo0ov",
+            "name": "vo0ov",
+            "avatar": "c785b48a172ac2eabda5e8340e75acc1",
+            "media": {
+                "discord": "803934236499378208"
+            }
+        }
+    ],
+    "info": {
+        "url": "deplos.com",
+        "name": "Deplos"
+    }
+}

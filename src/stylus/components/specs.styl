@@ -1,0 +1,33 @@
+.specs 
+    display flex
+    flex-direction column
+    gap 10px
+    margin-top 20px
+    margin-bottom auto
+
+    .spec
+        font-size 18px
+        font-weight 500
+        display flex
+
+        &.ram 
+            --type: "GB ram"
+        
+        &.ssd 
+            --type: "GB ssd"
+
+        &::after
+            content var(--type)
+            font-weight 400
+            display inline-block
+            color colors.gray
+
+        &::before
+            content ''
+            background-image url("/assets/images/icons/checkmark.svg")
+            width 15px
+            aspect-ratio 1
+            background-size contain
+            background-repeat no-repeat
+            background-position center center
+            margin-right 8px

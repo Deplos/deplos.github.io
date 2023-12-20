@@ -1,0 +1,33 @@
+.features
+
+    &__list
+        display flex
+        align-items start
+        justify-content start
+        gap 20px
+        min-height 400px
+        flex-wrap wrap
+        margin-top 40px
+    
+    .feature:nth-child(1)
+        align-self end
+
+    .feature:nth-child(2)
+        align-self center
+
+
+    .feature
+        block()
+        delay(3)
+
+        flex 1 1 0
+        min-width 300px
+
+        &__name
+            font-size 24px
+            font-weight 500
+
+        &__description
+            color colors.gray
+            line-height 1.7
+            margin-top 20px

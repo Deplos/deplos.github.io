@@ -1,0 +1,36 @@
+@import "../abstracts/variables"
+@import "../abstracts/mixins"
+
+
+.creators 
+    .creators__list    
+        display flex
+        gap 20px
+        justify-content center
+        flex-wrap wrap
+        margin-top 40px
+
+    .creator 
+        block()
+        delay(3)
+
+        display flex
+        align-items start
+        gap 20px
+        min-width 260px
+
+        &__image
+            border-radius 99px
+
+        &__name
+            font-size 20px
+            font-weight 500
+
+        &__top
+            display flex
+            justify-content space-between
+            gap 20px
+            align-items center
+
+        &__description
+            color colors.gray

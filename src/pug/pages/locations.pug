@@ -1,0 +1,19 @@
+extends ../base.pug
+include ../components/plan.pug
+
+
+block variables 
+    - var name = "locations"
+
+block content
+    section.locations 
+        h2.h2.h2--center(data-anim)= title
+        
+        .locations__list 
+            for location in locations 
+                .location
+                    h3.location__name= location.name 
+                    ul.specs.location__specs
+                        each spec, name in location.specs 
+                            li(class='spec ' + name)= spec
+                

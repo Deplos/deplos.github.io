@@ -1,0 +1,266 @@
+.header
+    position fixed
+    top 0
+    left 0
+    background colors.background
+    width 100%
+
+
+    z-index 999
+
+    &__notice 
+        background-color colors.error
+        text-align center
+        padding 10px
+        font-weight bold
+
+        a 
+            text-decoration underline
+
+    &__content
+        display flex
+        justify-content space-between
+        align-items center
+        gap 30px
+        padding 20px
+
+    .button
+        @media (max-width: max-width)
+            display none
+
+
+    &__menu
+        height 40px
+        display none
+        aspect-ratio 1
+        border 1px solid colors.border
+        border-radius 4px
+        appearance none
+        cursor pointer
+        background-image linear-gradient(to bottom, 
+            colors.gray 10%, 
+            transparent 11%, 
+            transparent 40%, 
+            colors.gray 41%, 
+            colors.gray 50%, 
+            transparent 51%, 
+            transparent 90%, 
+            colors.gray 91%);
+        background-size 60% 50%
+        background-repeat no-repeat
+        background-position center center
+        transition border-color 0.2s ease
+
+        &:hover
+            border-color colors.gray
+
+        @media (max-width: max-width)
+            display block
+
+            &:checked 
+                background-image linear-gradient(45deg, 
+                        transparent 48%, 
+                        colors.gray 49%, 
+                        colors.gray 53%, 
+                        transparent 54%), 
+                    linear-gradient(-45deg, 
+                        transparent 48%, 
+                        colors.gray 49%, 
+                        colors.gray 53%, 
+                        transparent 54%);
+
+                & ~ .button
+                    display inline-block
+                    position absolute
+                    bottom 0
+                    transform translateY(100%)
+
+                & + .header__links
+                    position absolute
+                    display flex
+                    flex-direction column
+                    align-items end
+                    gap 15px
+                    right 20px
+                    bottom 0
+                    transform translateY(100%)
+                    background-color colors.background
+                    width 100%
+                    padding-top 10px
+                    padding-bottom 20px
+                    font-size 20px
+                
+                & ~ .language
+                    display block
+                    position absolute
+                    top 140px
+
+    &__links
+        display flex
+        gap 20px
+        align-items center
+        margin-left auto
+
+        @media (max-width: max-width)
+            display none
+
+    &__link
+        color colors.gray
+        transition color 0.2s ease-in;
+
+        &:hover
+            color colors.white
+    
+    .category
+        display flex
+        align-items center
+        gap 20px
+        flex-direction column
+        position relative
+
+        @media (max-width: max-width)
+            align-items end
+            gap 10px
+            
+
+        &__links
+            position absolute
+            display none
+            padding 0
+            flex-direction column
+            width 100%
+            gap 7px
+            width calc(100% + 20px)
+            padding 10px
+            border 1px solid colors.border;
+            background-color colors.background
+            z-index 2
+            top 0
+            border-radius 4px
+
+            @media (max-width: max-width)
+                position static
+                padding 0
+                border-width 0
+                gap 10px
+                align-items end
+                top 0
+                display flex
+                z-index inherit
+                max-height 0
+                overflow hidden 
+                transition max-height 0.5s ease, border-width 0.5s ease, padding 0.5s ease
+
+
+            padding-top 40px
+        
+        &__name 
+            display flex
+            gap 10px
+            cursor default
+            padding 4px
+
+            &::after
+                content ''
+                background-image url("/assets/images/icons/angle-down.svg")
+                background-repeat no-repeat
+                background-position center
+                background-size contain
+                display block
+                width 12px
+                aspect-ratio 1
+                transition transform 0.2s ease
+        
+        .category__links:hover 
+            display flex
+
+        &:hover
+
+            .category__name
+                z-index 999
+                
+                &::after
+                    transform rotate(180deg)
+
+            .category__links
+                display flex  
+
+                @media (max-width: max-width)
+                    height auto
+                    max-height 999px
+                    padding 8px
+                    border-width 1px
+
+                a 
+                    overflow-wrap: break-word;
+
+
+
+
+
+    
+    .language
+        position relative
+
+        @media (max-width: max-width) {
+            display none
+        }
+
+        &__current
+            text-transform uppercase
+            color colors.gray
+            cursor pointer
+            display flex
+            align-items center
+            gap 4px
+            padding 4px
+
+            &::after
+                content ''
+                background-image url("/assets/images/icons/angle-down.svg")
+                background-repeat no-repeat
+                background-position center
+                background-size contain
+                display block
+                width 16px
+                aspect-ratio 1
+                transition transform 0.2s ease
+
+        &__list
+            display flex
+            opacity 0
+            visibility hidden
+            position absolute
+            flex-direction column
+            border 1px solid colors.border
+            border-radius 4px
+            transition: visibility 0s, opacity 0.5s ease;
+            bottom 0
+            transform translateY(100%)
+            background-color colors.background
+
+
+        &__name
+            text-transform uppercase
+            color colors.gray
+            cursor pointer
+            padding 4px 8px
+            transition color 0.2s ease
+
+            &:hover
+                color colors.white
+
+            &:first-child
+                padding-top 8px
+
+            &:last-child
+                padding-bottom 8px
+        
+        &:hover
+            .language__current
+                &::after
+                    transform rotateZ(180deg)
+
+            .language__list
+                visibility visible
+                opacity 1

@@ -1,0 +1,486 @@
+{
+    "links": {
+        "pages": {
+            "/": "Home",
+            "partners": "Partnership",
+            "plans": "Plans",
+            "locations": "Locations",
+            "rules": "Rules",
+            "support": "Support",
+            "privacy": "Privacy",
+            "guides": "Guides",
+            "creators": "Creators"
+        },
+        "services": {
+            "panel": "Panel",
+            "client": "Client",
+            "status": "Status"
+        },
+        "categories": {
+            "help": "Help",
+            "legal": "Legal",
+            "services": "Services",
+            "main": "Main"
+        }
+    },
+    "header": {
+        "button": "Sign up",
+        "notice": "Deplos is no longer available, this website is working in demo mode, the code can be found <a href='http://github.com/Deplos/website-public'>here</a>"
+    },
+    "specs": {
+        "private": "Private location",
+        "vip": "Access to VIP chat",
+        "quick": "Fast SSD",
+        "priority": {
+            "name": "priority",
+            "low": "Low",
+            "mid": "Medium",
+            "upper": "High"
+        },
+        "buy": "Buy",
+        "get": "Get for free"
+    },
+    "footer": {
+        "description": "Professional game hosting 24/7 for game servers",
+        "copyright": "We are not affiliated with any brand."
+    },
+    "form": {
+        "inputs": {
+            "name": "Name",
+            "email": "E-mail",
+            "youtube": "YouTube Channel",
+            "server": "Server's UUID",
+            "discord": "Discord ID"
+        },
+        "notifications": {
+            "success": "Message was send",
+            "error": "Error while sending message"
+        },
+        "agree": "I agree to <a href=\"/rules.html\">terms of use</a> and <a href=\"/privacy.html\">privacy policy</a>"
+    },
+    "pages": {
+        "index": {
+            "title": "Home",
+            "description": "With [name] you can host Minecraft, Python, Node.js servers that would work 24/7. With easy control panel and helpful support",
+            "hero": {
+                "title": "Reliable game server hosting",
+                "description": "With great network speed and easy control panel",
+                "button": "Get Started Now"
+            },
+            "features": {
+                "title": "Why us?",
+                "list": [
+                    {
+                        "name": "Conveniently",
+                        "description": "Our professional control panels, allows you to use our service at any time and for any device"
+                    },
+                    {
+                        "name": "Stable",
+                        "description": "Our equipment has uninterrupted support, low ping and no lag. And the speed of operation will allow you to set up a server in 25 seconds."
+                    },
+                    {
+                        "name": "Safely",
+                        "description": "We have a security certificate installed, all data is transmitted in encrypted form."
+                    }
+                ]
+            },
+            "ourServices": {
+                "title": "Supported services",
+                "description": "We plan to add to this list in the future"
+            },
+            "ourPlans": {
+                "title": "Popular plans",
+                "more": "All plans"
+            },
+            "blocks": {
+                "panel": {
+                    "title": "Convenient control panel",
+                    "description": "A quick and easy panel will allow you to use our hosting without problems. With it, you will greatly facilitate the creation of your server.",
+                    "button": "Go to panel"
+                },
+                "partners": {
+                    "title": "Partnership system",
+                    "description": "If you have an audience in some social network that is interested in hosting servers, then you can safely apply for a partnership with us. And get big prizes for it.",
+                    "button": "Partnership program"
+                },
+                "community": {
+                    "title": "Own community",
+                    "description": "In our discord server you will find raffles and gifts. As well as news and frequent updates",
+                    "button": "Discord"
+                }
+            },
+            "faq": {
+                "title": "Frequently Asked Questions",
+                "list": [
+                    {
+                        "question": "Why is my server in \"Suspended\" status?",
+                        "answer": "You have probably violated the rules of use and/or exceeded the resources specified. If the status contains a message contact technical support."
+                    },
+                    {
+                        "question": "Why does my server have an endless load?",
+                        "answer": "Perhaps the location where your server is located is down and/or under maintenance. Otherwise, there is a hardware overload. If the server does not boot up within 24 hours, contact technical support."
+                    },
+                    {
+                        "question": "Why does my console slow down when I start the server?",
+                        "answer": "Check what version of the server you are installing. Also make sure that in the \"Startup\" is the current version of Java for the installed version."
+                    }
+                ]
+            },
+            "comments": {
+                "title": "Reviews",
+                "more": "All reviews",
+                "comments": [
+                    "THE BEST HOSTING. When aurorix is broken, here is 20 tps and 60 pings on 1.19.4 on a free node, and there the only option is to donate, but on aurorix even on 16.5 there is 16 tps and 200+ ping",
+                    "Fast host, used it as a proxy server, there were no disconnects + spent time in the role of a server and gave the players admin permissions, do what you want, I will continue to use it. I hope the hosting will live for a long time, I have seen many hosts that started out very well, but after years they quietly closed themselves off from everyone.",
+                    "The host does not lag and has very powerful hardware, as for a free hosting it pulls even perfomant mods and it isn't even half loaded, there is no ping above 20, at least on the UK node"
+                ]
+            },
+            "contacts": {
+                "title": "Any questions?",
+                "message": "Your question",
+                "button": "Send"
+            },
+            "cta": {
+                "title": "Are you still waiting?",
+                "button": "Get Started Now"
+            }
+        },
+        "error": {
+            "title": "Page not found",
+            "description": "Page not found, you may have entered the wrong path",
+            "button": "Home"
+        },
+        "partners": {
+            "title": "Partnership",
+            "requirements": {
+                "title": "Fulfill the requirements",
+                "list": {
+                    "users": "Users",
+                    "views": "Views",
+                    "subs": "Subscribers",
+                    "videos": "Video"
+                }
+            },
+            "request": {
+                "title": "Fill out the form",
+                "message": "What do you expect from us?",
+                "button": "Send request"
+            },
+            "gifts": {
+                "title": "Retrieved",
+                "list": [
+                    {
+                        "name": "More resources",
+                        "description": "We will give you a free paid rate, or improve your current rate at a discount."
+                    },
+                    {
+                        "name": "Partner Chat",
+                        "description": "Personal role and access to a special chat room for hosting partners"
+                    },
+                    {
+                        "name": "Early access",
+                        "description": "Access to beta hosting features, as well as a higher priority of support"
+                    }
+                ]
+            }
+        },
+        "support": {
+            "title": "Support",
+            "support": {
+                "title": "Need help?",
+                "message": "Is there something you want to ask?",
+                "button": "Send"
+            }
+        },
+        "plans": {
+            "title": "Plans"
+        },
+        "rules": {
+            "title": "Rules",
+            "updatedAt": "Updated 21 february 2021 year",
+            "sections": [
+                {
+                    "title": "Users Allowed",
+                    "rules": [
+                        {
+                            "text": "Place your servers on a game host",
+                            "list": [
+                                "with any name",
+                                "with any version",
+                                "with any number of players",
+                                "at any location",
+                                "add anyone's account"
+                            ]
+                        },
+                        {
+                            "text": "Change",
+                            "list": [
+                                "account information",
+                                "server content",
+                                "login data",
+                                "server name",
+                                "number of servers",
+                                "number of coins",
+                                "number of resources"
+                            ]
+                        },
+                        "[name] reserves the right to change the amount of resources/contents of the server without giving reasons. (in the case when trying to load the hosting)."
+                    ]
+                },
+                {
+                    "title": "Liability and Limitation of Liability",
+                    "rules": [
+                        {
+                            "text": "Under no circumstances is [name] Hosting responsible for",
+                            "list": [
+                                "server health",
+                                "its content",
+                                "save files",
+                                "actions that are performed on the server",
+                                "change server structure",
+                                "distributing information to connect to the server",
+                                "transferring server rights to others",
+                                "manual reinstallation of the server"
+                            ]
+                        },
+                        "Under no circumstances is [name] hosting obliged to distribute information about payments made and payment receipts received.",
+                        "Under no circumstances is [name] hosting responsible for the global loss of files in free locations; the user himself monitors his files, makes backups; the responsibility is fully transferred to the owner of the server (user), hosting is not involved in this case.",
+                        "In the event of a global data loss, regardless of the status of the user, the user cannot blame the hosting for the loss of data in free locations, since the user agreed with the offer, and the conditions apply: Article 2 paragraph 2.2, 2.1, 2.1.2, 2.3, 2.8, 2.7.2.",
+                        "All rules must be followed, regardless of the user's status.",
+                        "The user undertakes to comply with the rules of the offer, as well as to fulfill them. If it is revealed that the user has violated the rules of use, he will be blocked until the causes are eliminated. Otherwise, forever without the possibility of recovery.",
+                        {
+                            "text": "[name] is completely released from responsibility for the safety and correct operation of the server",
+                            "list": [
+                                "the user himself makes the final decision on the server",
+                                "correct operation of the server depends on the user",
+                                "for purposeful server failure, the user undertakes to restore it on his own"
+                            ]
+                        },
+                        "When you click the button: Login, Create a server, Login with Discord, Login via discord, Register + you agree to the terms of the offer, agree to comply with the terms.",
+                        "The user is fully responsible for his server.",
+                        "[name] may delete a user's server if it is not used for a long time.",
+                        "[name] can ask the user to check for the presence of an ad blocker through a screenshot. The user must send a screenshot to the employee; if the user has an ad blocker, the user will be blocked until the causes are eliminated.",
+                        "The creator of the hosting can ban and / or mute and / or kick a person from the Discord server for no reason at his discretion (if he knows this person).",
+                        "By joining the hosting Discord server, the user automatically agrees to the terms of use of the hosting and chat rules.",
+                        "Ignorance of the rules of using the hosting does not release the user from responsibility.",
+                        "The user certifies [name] and confirms that he will observe changes to the hosting rules.",
+                        "[name] has the right to change the hosting rules without notifying the user.",
+                        "The user agrees to the terms of use when registering on the hosting or creating a request for technical support.",
+                        "Even if a person has purchased a paid plan and become a hosting donor, he must still comply with all the rules. All rules must also be observed, including: Article 3.4 part 2 paragraph e; e.",
+                        "After purchasing a paid plan and/or additional resources and/or an addition to paid and/or free plans, the money cannot be returned.",
+                        "By purchasing a paid plan and/or an add-on to a free plan, the user agrees to all terms of use and represents [name] to comply with them.",
+                        "Even if a person has purchased a paid tariff and/or an add-on and/or additional resources to his tariff, [name] reserves the right to block any server and/or change the amount of resources, regardless of status, without explanation.",
+                        "Visitors visiting the site may not copy phrases from the hosting or description without the permission of [name], even if [name] is not registered in copyright. (applies to all visitors browsing the service's sites).",
+                        "User can request deletion of account from [name] hosting.",
+                        "[name] may change fare conditions and|or fare prices at any time without notice to the user.",
+                        "[name] hosting issues compensation for the loss of user files at its own discretion; compensation also cannot be issued without explanation.",
+                        "If a user finds an error and/or defect and/or bug on the hosting, then he must report it to technical support. In case of dissemination of information about the hosting defect, the user will be blocked without the possibility of recovery.",
+                        "Commissions charged by the vds/vps provider are paid by [name] hosting from their own funds.",
+                        "A user who owns such projects, such as: game hosting (minecraft), YouTube channel, will be banned from the [name] hosting discord server without the possibility of recovery.",
+                        "[name] does not guarantee 100% absence of brakes on paid tariffs with a private location.",
+                        "In the event of an erroneous transfer of funds from the user to the hosting, the add-on and / or paid tariff and / or private location cannot be issued. [name] Hosting is not responsible for receiving funds from the user.",
+                        "The user has the right to refuse the use of hosting.",
+                        "Paid tariffs can be issued up to 7 days, otherwise the issuance may not be carried out.",
+                        "[name] may shorten the fare period without explanation.",
+                        "If the tariff has not been suspended after the expiration of the term, [name] has the right to demand compensation for hosting losses.",
+                        "[name] Hosting may pause and/or disable the server, regardless of user status, for bursty load and/or high load. Also, the server may be suspended and/or disabled for 100% CPU usage for several hours.",
+                        "The user must register with mail from popular services. Registration by temporary mail is not allowed.",
+                        "Donators (or the so-called users accidentally admitted to tickets) do not have the right to interfere with the responses of moderators' tickets if there was no approval from the administration. The text that appeared from an unapproved user entails the removal of the role of the donator (without the possibility of recovery) or another another that does not imply replies in moderator tickets.",
+                        "[name] reserves the right to block or delete a server or account without giving reasons (in case of violations of hosting rules.)"
+                    ]
+                },
+                {
+                    "title": "Users denied",
+                    "rules": [
+                        "creating multi-accounts and servers on them.",
+                        "install any plugins that show information about hosting machines.",
+                        "install operating systems such as: Linux and others.",
+                        "install game donation sites in a non-factory way.",
+                        "install Discord bots non-factory.",
+                        "create many servers and don't use them for a long time.",
+                        "upload photo or video to server.",
+                        "use server as cloud storage.",
+                        "create accounts with inappropriate username or email.",
+                        "create servers with an inappropriate name.",
+                        "spam in tech support chat",
+                        "insult tech support staff",
+                        "create a server with loaded version and don't use it",
+                        "create a server and then don't use it",
+                        "use ad blockers; use scripts that block ad blocks",
+                        "use VPN servers that block ads",
+                        "offend hosting users",
+                        "promote third-party projects (including your own YouTube channels)",
+                        "mislead hosting users, including hosting creators",
+                        "have more than 1 hosting account, otherwise, if more than 1 account is detected, the user will be blocked in the hosting system without the possibility of recovery",
+                        "mislead or deceive technical support or hosting administration",
+                        "ping the creators in the hosting discord server",
+                        "use mate in chat with users in hosting discord server",
+                        "Show or send 18+ content no matter where."
+                    ]
+                }
+            ]
+        },
+        "privacy": {
+            "title": "Privacy Policy",
+            "updatedAt": "Updated 21 february 2021 year",
+            "sections": [
+                {
+                    "title": "Definition of terms",
+                    "rules": [
+                        "[name] Site Administration (hereinafter referred to as the Site Administration) - authorized employees to manage the site, acting on behalf of [name], who organize and (or) process personal data, and also determine the purposes of processing personal data, the composition of personal data subject to processing, actions (operations) performed with personal data.",
+                        "Personal data - any information relating directly or indirectly to a specific or identifiable natural person (subject of personal data).",
+                        "Processing of personal data - any action (operation) or a set of actions (operations) performed with or without the use of automation tools with personal data, including collection, recording, systematization, accumulation, storage, clarification (updating, changing) , extraction, use, transfer (distribution, provision, access), depersonalization, blocking, deletion, destruction of personal data.",
+                        "Confidentiality of personal data is a mandatory requirement for the Operator or other person who has gained access to personal data to prevent their distribution without the consent of the subject of personal data or other legal grounds.",
+                        "[name] Site User (hereinafter referred to as the User) - a person who has access to the Site via the Internet and uses the [name] Site.",
+                        "A cookie is a small piece of data sent by a web server and stored on the user's computer, which the web client or web browser sends to the web server in an HTTP request every time they try to open a page of the corresponding site.",
+                        "IP address is a unique network address of a node in a computer network built using the IP protocol."
+                    ]
+                },
+                {
+                    "title": "General provisions",
+                    "rules": [
+                        "User's use of the [name] website means acceptance of this Privacy Policy and the terms of processing of the User's personal data.",
+                        "In case of disagreement with the terms of the Privacy Policy, the User must stop using the [name] website.",
+                        "This Privacy Policy applies only to the [name] website. [name] does not control and is not responsible for third party websites to which the User can follow links available on the [name] website.",
+                        "The site administration does not verify the accuracy of personal data provided by the User of the [name] site."
+                    ]
+                },
+                {
+                    "title": "Privacy Policy Subject",
+                    "rules": [
+                        "This Privacy Policy establishes the obligations of the [name] Site Administration to not disclose and ensure the confidentiality of personal data that the User provides at the request of the Site Administration when registering on the [name] site.",
+                        {
+                            "text": "Personal data authorized for processing under this Privacy Policy is provided by the User by filling out the registration form on the [name] Website in the \"Register\" section and includes the following information",
+                            "list": [
+                                "user login",
+                                "e-mail address (e-mail)",
+                                "account password"
+                            ]
+                        },
+                        {
+                            "text": "[name] protects Data that is automatically transmitted while viewing ad units and when visiting pages on which the Counter system's statistical script is installed",
+                            "list": [
+                                "visitor's IP address",
+                                "time spent on the site",
+                                "previous page address",
+                                "show target actions through the counter",
+                                "information from cookies (transfer of information goes to the counters installed on the site)",
+                                "browser information",
+                                "information about visited links on the service",
+                                "information about the last link by which the visitor got to the site",
+                                "information about the country, region",
+                                "operating system information",
+                                "device type information",
+                                "referrer (url of previous page)."
+                            ]
+                        },
+                        "Disabling cookies may result in the inability to access parts of the [name] website that require authorization.",
+                        "[name] collects statistics about the IP addresses of its visitors. This information is used to identify and solve technical problems, to identify violators and their accounts.",
+                        "Any other personal information is subject to secure storage and non-distribution, except as provided in paragraphs 5.2. and 5.3. of this Privacy Policy."
+                    ]
+                },
+                {
+                    "title": "Purposes of collecting user's personal information",
+                    "rules": [
+                        {
+                            "text": "Personal data of the User may be used by [name] site administration for purposes",
+                            "list": [
+                                "Identification of the User registered on the [name] website in case of problems with authorization or registration",
+                                "Establishing feedback with the User, including sending notifications, requests regarding the use of the [name] Site, the provision of services, processing requests and applications from the User",
+                                "Confirmation of the accuracy and completeness of personal data provided by the User",
+                                "Creating an account to use the service, if the User has agreed to create an account",
+                                "Notifications to the User of the [name] Site about the creation of a server and a response from technical support",
+                                "Providing the User with effective client and technical support in case of problems related to the use of [name]",
+                                "Providing to the User with his consent, product updates, special offers, pricing information, newsletters and other information on behalf of [name].",
+                                "Carrying out advertising activities with the consent of the User.",
+                                "Granting the User access to the sites in order to obtain products, updates and services."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "text": "Methods and terms of personal information processing",
+                    "rules": [
+                        "The processing of the User's personal data is carried out without time limit, in any legal way, including in personal data information systems using automation tools or without using such tools.",
+                        "The User agrees that the Site Administration has the right to transfer personal data (in this case, the text of the letter, except for the text of the letter, nothing is transmitted) to third parties, in particular, postal organizations, telecommunications operators, solely for the purpose of fulfilling the User's order placed on the Site [name].",
+                        "The User's personal data may be transferred to authorized state authorities only on the grounds and in the manner prescribed by law.",
+                        "In case of loss or disclosure of personal data, the Site Administration informs the User about the loss or disclosure of personal data.",
+                        "The site administration takes the necessary organizational and technical measures to protect the User's personal information from unauthorized or accidental access, destruction, modification, blocking, copying, distribution, as well as from other illegal actions of third parties.",
+                        "The site administration, together with the User, takes all necessary measures to prevent losses or other negative consequences caused by the loss or disclosure of the User's personal data."
+                    ]
+                },
+                {
+                    "text": "Obligations of the parties",
+                    "rules": [
+                        {
+                            "text": "User must",
+                            "list": [
+                                "Provide information about personal data necessary to use the [name] Site.",
+                                "Update, supplement the provided information about personal data in case of changes in this information."
+                            ]
+                        },
+                        {
+                            "text": "The site administration is obliged",
+                            "list": [
+                                "Use the information received solely for the purposes specified in clause 4 of this Privacy Policy.",
+                                "Ensure the storage of confidential information in secret, not to disclose it without the prior permission of the User, and also not to sell, exchange, publish, or disclose in other possible ways the transferred personal data of the User, with the exception of clauses 5.2. and 5.3. of this Privacy Policy. ",
+                                "Take precautions to protect the confidentiality of the User's personal data in accordance with the procedure usually used to protect this kind of information in existing business transactions.",
+                                "To carry out the blocking of personal data relating to the relevant User, from the moment of the request or request of the User or his legal representative or the authorized body for the protection of the rights of subjects of personal data for the period of verification, in case of revealing inaccurate personal data or illegal actions."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Party Liability",
+                    "rules": [
+                        "The site administration, which performs its duties, is not liable for losses incurred by the User in connection with the misuse of personal data, in accordance with the law, except as provided in paragraphs 5.2., 5.3. and 7.2. of this Privacy Policy .",
+                        {
+                            "text": "In case of loss or disclosure of Confidential Information, the Site Administration is not responsible if this confidential information",
+                            "list": [
+                                "became public domain until lost or disclosed.",
+                                "Was received from a third party before it was received by the Site Administration.",
+                                "It was disclosed with the consent of the User."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Additional Terms",
+                    "rules": [
+                        "The site administration has the right to make changes to this Privacy Policy without the consent of the User.",
+                        "The new Privacy Policy comes into force from the moment it is posted on the [name] Website, unless otherwise provided by the new edition of the Privacy Policy.",
+                        "All suggestions or questions regarding this Privacy Policy should be reported to: support@[url]",
+                        "The current Privacy Policy is posted on the page at [url]/privacy.html and dash.[url]/privacy"
+                    ]
+                }
+            ]
+        },
+        "locations": {
+            "title": "Available locations"
+        },
+        "guides": {
+            "title": "Help center",
+            "search": "Search",
+            "notFound": "No guides ware found"
+        },
+        "guide": {
+            "title": "Guide",
+            "share": "Share"
+        },
+        "creators": {
+            "title": "Creators",
+            "roles": {
+                "elias": "UI Designer & Developer",
+                "kreosan": "Founder",
+                "yasin": "Founder",
+                "vo0ov": "Discord bot developer"
+            }
+        },
+        "vote": {
+            "title": "Voting"
+        },
+        "verify": {
+            "title": "Verification"
+        }
+    }
+}

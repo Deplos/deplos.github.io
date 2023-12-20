@@ -1,0 +1,48 @@
+.comments__list
+    display flex
+    align-items center
+    margin-top 40px
+    margin-bottom 20px
+    overflow-x auto
+    gap 20px
+
+.comment
+    block()
+
+    max-width 400px
+    min-width 300px
+
+    &__info
+        display flex
+        justify-content space-between
+        gap 16px
+        align-items center
+
+    &__date
+        color colors.gray
+
+    &__rating
+        padding 4px 12px
+        border-radius 4px
+        border 1px solid colors.border
+        margin-bottom 12px
+        display block
+        width min-content
+        font-weight 500
+        font-size 20px
+
+        &::after
+            content "/10"
+    &__body
+        margin-top 12px
+.user
+    display flex
+    align-items center
+    gap 8px
+
+    &__name
+        color colors.gray
+
+
+    &__avatar
+        border-radius 99px

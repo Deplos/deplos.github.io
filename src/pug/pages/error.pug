@@ -1,0 +1,11 @@
+extends ../base.pug
+
+block variables 
+    - var name = "404"
+
+block content 
+    section.not-found 
+        h1.not-found__title= 404
+        p.not-found__description= description
+        a.button(href="/")= button
+        

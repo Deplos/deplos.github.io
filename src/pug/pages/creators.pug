@@ -1,0 +1,29 @@
+extends ../base.pug
+
+block variables 
+    - var name = "creators"
+
+block content    
+    section.creators 
+        h2.h2.h2--center(data-anim)= title
+        .creators__list
+            for creator in creators 
+                .creator(data-anim) 
+                    img.creator__image(
+                        src=`https://cdn.discordapp.com/avatars/${creator.media.discord}/${creator.avatar}.webp?size=64`, 
+                        alt=creator.name)
+                    .creator__content 
+                        .creator__top 
+                            h3.creator__name= creator.name 
+                            .media 
+                                each id, media in creator.media 
+                                    - var href = ""
+
+                                    if media == "discord" 
+                                        - var href = "https://discord.com/users/" + id
+
+                                    a.media__link(href=href)
+                                        img.media__icon(
+                                            src="/icons/" + media + ".svg", alt=media, width="30" height="30")
+                        p.creator__description= roles[creator.id]
+                                

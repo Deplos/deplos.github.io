@@ -1,0 +1,54 @@
+.faq
+
+    &__list
+        display flex
+        flex-direction column
+        gap 10px
+        margin-top 40px
+
+    .question
+        delay(3)
+        border 1px solid colors.border
+        border-radius 5px
+        transition border-color 0.2s ease-in
+
+        &:hover
+            border-color colors.white
+
+
+        &__question
+            padding 15px 20px
+            cursor pointer
+            font-size 18px
+            font-weight 500
+            color: colors.gray
+            position relative
+            transition color 0.2s ease
+
+            &::after
+                --angle 0
+                content 'V'
+                display block
+                position absolute
+                right 20px
+                font-size 20px
+                top 50%
+                transform translateY(-50%) scale(1, .5) rotateX(var(--angle))
+                transition transform 0.2s ease-in
+
+            &::marker
+                content ''
+
+        &[open] 
+            border-color colors.white
+
+            & .question__question
+                color colors.white
+
+            .question__question::after
+                --angle 180deg
+
+        &__answer
+            padding 20px
+            padding-top 0
+            color colors.gray

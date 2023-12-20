@@ -1,0 +1,36 @@
+mixin form(opts)
+    - 
+        var patterns = {
+            name: "[\u0410-\u044fA-Za-z0-9 ]{3,16}",
+            youtube: "(https?:\/\/(www\.)?youtube\.com\/(channel\/UC[\w-]{21}[AQgw]|(c\/|user\/)?[\w-]+))|((UC[\w-]{21}[AQgw])|([\w-]+))",
+        }
+
+    form.form(action="/" method="POST")
+        p.notification.success= form.notifications.success
+        p.notification.error= form.notifications.error
+        for input in opts.inputs 
+            .input(data-anim)  
+                input(
+                    type=input === "email" ? "email" : "text", 
+                    id=input, 
+                    name=input, 
+                    pattern=patterns[input] ? "^(" + patterns[input] + ")$" : undefined, 
+                    placeholder=" ", 
+                    required)
+                label(for=input)= form.inputs[input] 
+
+        .input(data-anim)  
+            textarea#message(
+                type="text" 
+                name="message" 
+                placeholder=" " 
+                pattern="^([*]{8, 512})$"
+                required)
+            label(for="message")= opts.message
+        
+        .checkbox
+            input(type="checkbox", id="agreement", required)
+            label(for="agreement") !{form.agree}
+        
+
+        button#submit.button= opts.button

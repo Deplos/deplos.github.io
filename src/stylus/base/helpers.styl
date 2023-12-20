@@ -1,0 +1,82 @@
+@import "../abstracts/mixins"
+@import "../abstracts/variables"
+
+
+.container
+    max-width max-width
+    width 100%
+    margin 0 auto
+    padding 0 20px
+    margin-top 200px
+    display flex
+    flex-direction column
+    gap 100px
+    min-height calc(100vh - 100px)
+
+.form
+    display flex
+    flex-direction column
+    gap: 16px
+    min-width 300px
+    max-width 500px
+    align-items start
+
+    .input
+        delay(4)
+    
+    .button
+        animation-delay: 4 * anim-delay
+
+    .notification
+        text-align center
+        width 100%
+        color colors.error
+        padding 8px
+        font-weight 600
+        border 1px solid colors.border
+        display none
+        border-radius 8px
+
+        &.show
+            display block
+
+        &.error
+            color colors.error
+            border-color colors.error
+        
+        &.success
+            color colors.green
+            border-color colors.green
+
+.logo
+    display flex
+    gap 10px
+    align-items center
+
+    &__image
+        max-height 30px
+        width auto
+        
+    &__name
+        font-weight 600
+
+
+.h2
+    font-size 32px
+    font-weight 600
+
+    &--center
+        text-align center
+
+
+
+.media 
+    display flex
+    gap 5px
+
+    &__icon
+        max-width 30px
+        aspect-ratio 1
+
+        &:hover
+            filter brightness(0) invert()

@@ -1,0 +1,44 @@
+@import "../abstracts/variables"
+@import "../abstracts/mixins"
+@import "../components/input"
+
+.support
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+    gap 20px
+
+    &__list
+        display flex
+        align-items start
+        flex-wrap wrap
+        max-width 300px
+        gap 10px
+        margin-top 40px
+        flex 1 1 0
+
+    .form 
+        flex 1 1 0
+
+    .media
+        block(10px)
+        delay(3)
+        
+        display flex
+        gap 10px
+        align-items center
+
+        &__icon
+            max-width 32px
+            aspect-ratio 1
+
+        &__link
+            font-weight 500
+            color colors.gray
+            font-size 18px
+
+    @media (max-width: max-width)
+        .form 
+            width 100%
+        
+    

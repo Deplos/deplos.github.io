@@ -1,0 +1,74 @@
+include ../components/logo.pug
+
+header.header
+
+    .header__notice.notice
+        .notice__text !{header.notice}
+
+    .header__content
+        +logo
+
+        input.header__menu(type="checkbox" name="menu" aria-label="menu")
+
+
+        nav.header__links 
+            - 
+                var paths = [
+                    {
+                        name: "/"
+                    }, 
+                    {
+                        name: "plans"
+                    }, 
+                    {
+                        name: "partners"
+                    }, 
+                    {
+                        name: "locations"
+                    }, 
+                    {
+                        name: "creators"
+                    },
+                    {
+                        name: "services",
+                        links: ["panel", "client", "status"]
+                    },
+                    {
+                        name: "help",
+                        links: ["support", "guides"]
+                    }
+                ]
+
+            for path in paths
+                - var href = path.name
+                - var name = links.pages[path.name]
+
+                if href !== "/"
+                    - var href = "/" + href + ".html"
+                    
+                if path.links === undefined
+                    a.header__link(href=href)= name
+                else 
+                    - var name = links.categories[path.name]
+
+                    .category 
+                        p.header__link.category__name= name
+                        .category__links 
+                            for link in path.links 
+                                - var href = $helpers.toPage(link)
+                                - var name = links.pages[link]
+
+                                if path.name === "services" 
+                                    - var name = links.services[link]
+                                    - var href = $helpers.toService(link)
+
+                                a(href=href).header__link= name
+
+        a.button.button--secondary(href=$helpers.toService("client"), absolute)= header.button
+
+        .language 
+            span.language__current= $locale.currentLocale 
+            .language__list 
+                for locale in $locale.locales
+                    a(href="/" + locale + "/" + $locale.currentPage, absolute).language__name= locale  
+

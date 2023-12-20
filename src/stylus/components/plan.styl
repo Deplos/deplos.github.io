@@ -1,0 +1,51 @@
+@import "specs"
+
+.plan
+    block()
+    display flex
+    flex-direction column
+    justify-content space-between
+    align-items start
+    min-width 300px
+
+    .button
+        margin-top 40px
+        align-self center
+
+    &__name
+        font-weight 600
+        font-size 24px
+    
+    &__price
+        font-size 36px
+        font-weight 700
+        display flex
+        align-items start
+        gap 8px
+        margin-top 20px
+
+        &--hidden
+            display none
+
+        &::before
+            content '$'
+            color colors.gray
+            font-size 16px
+            font-weight 400
+
+
+    .spec
+        &.cpu
+            --type "% cpu"
+
+        &.ram 
+            --type "MB ram"
+
+        &.priority
+            --type: attr(data-priority)
+
+            &::after
+                margin-left 4px
+   
+        
+            

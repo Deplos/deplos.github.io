@@ -1,0 +1,40 @@
+@import "../abstracts/variables"
+@import "../components/tag"
+
+.guide
+    &__info
+        display flex
+        justify-content space-between
+        gap 12px
+        margin-top 20px
+
+    &__title
+        margin-top 12px
+
+    &__image
+        width 100%
+        height 300px
+        display grid
+        place-items center
+        font-size 24px
+        border-radius 5px
+        font-weight 500
+        color colors.gray
+        margin-bottom 12px
+        object-fit cover
+
+        &:not(.loaded)
+            border 1px solid colors.border
+
+
+    &__date
+        color colors.gray
+
+    &__content
+        margin-top 20px
+
+        a 
+            text-decoration underline
+
+            &:hover
+                text-decoration none

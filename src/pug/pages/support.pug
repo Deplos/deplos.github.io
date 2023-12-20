@@ -1,0 +1,26 @@
+extends ../base.pug
+include ../components/form.pug
+
+block variables 
+    - var name = "support"
+    - var hasForm = true
+
+block content 
+    section.support 
+        .support__media 
+            h2.h2(data-anim)= support.title
+
+            .support__list 
+                a(href=media.discord, data-anim).media 
+                    img.media__icon(src="/icons/discord.svg", alt="Discord")
+                    .media__link .gg/!{rawMedia.discord}
+
+                a(href=media.phone, data-anim).media 
+                    img.media__icon(src="/icons/phone.svg", alt="Phone")
+                    .media__link= rawMedia.phone
+        
+        +form({
+            inputs: ["name", "email"],
+            message: support.message,
+            button: support.button
+        })

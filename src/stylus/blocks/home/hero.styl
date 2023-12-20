@@ -1,0 +1,34 @@
+
+.hero
+    text-align center
+
+    &__image
+        object-fit cover
+        max-width 600px
+        width 100%
+        height auto
+
+        mask-image linear-gradient(180deg, #000000 0%, #00000000 80%)
+        -webkit-mask-image @mask-image
+
+    .button
+    &__image
+        margin 0 auto
+
+    .button
+        margin-bottom 50px
+
+        &:after
+            content ' →'
+
+    &__description
+        color colors.gray
+        margin-bottom 20px
+        margin-top 20px
+
+    &__title
+        font-size 32px
+        font-weight 600
+        max-width 500px
+        margin 0 auto
+

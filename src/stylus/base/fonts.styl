@@ -1,0 +1,10 @@
+
+fonts = 400 500 600 700 800
+
+for weight in fonts
+    @font-face 
+        font-family Montserrat
+        font-style normal
+        font-weight weight
+        font-display swap
+        src url("/assets/fonts/" + weight + ".woff2") format("woff2")

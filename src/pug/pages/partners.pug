@@ -1,0 +1,47 @@
+extends ../base.pug
+include ../components/form.pug
+
+mixin arrow()
+    img.arrow(src="/icons/arrow.svg", alt="Next step",  width="50", height="80", data-anim)
+
+block variables 
+    - var name = "partners"
+
+block content 
+    section.requirements 
+        -
+            var requirementsList = {
+                users: 100,
+                views: 200,
+                subs: 300,
+                videos: 1
+            }
+        
+        h2.h2.h2--center(data-anim)= requirements.title
+        .requirements__list 
+            each count, name in requirementsList 
+                .requirement(data-anim) 
+                    h3.requirement__count= count 
+                    p.requirement__name= requirements.list[name]
+
+    +arrow 
+
+    section.request 
+        h2.h2.h2--center(data-anim)= request.title
+        +form({
+            inputs: ["name", "email", "youtube", "server", "discord"],
+            message: request.message,
+            button: request.button
+        })
+
+    +arrow 
+
+    section.gifts         
+        h2.h2.h2--center= gifts.title
+        .gifts__list 
+            for gift in gifts.list 
+                .gift(data-anim)  
+                    h3.gift__name= gift.name 
+                    p.gift__description= gift.description 
+                
+        

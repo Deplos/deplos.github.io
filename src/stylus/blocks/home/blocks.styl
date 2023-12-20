@@ -1,0 +1,38 @@
+.blocks
+    display flex
+    flex-direction column
+    gap 100px
+
+    .block
+        display flex
+        justify-content space-between
+        gap 50px
+        flex-wrap wrap-reverse
+        // animation-delay 0.2s
+
+        &:nth-child(2)
+            flex-direction row-reverse
+
+        &__text
+            max-width 500px
+            width max-content
+
+        &__icon
+            border-radius 8px
+        
+        @media (max-width: max-width)
+            justify-content center
+
+            &__icon
+            &__text
+                width 100%
+                height auto
+                max-width none
+
+        &__description
+            margin-top 30px
+            color colors.gray
+            line-height 1.7
+
+        &__button
+            margin-top 20px

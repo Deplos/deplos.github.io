@@ -1,0 +1,16 @@
+extends ../base.pug
+include ../components/plan.pug
+
+
+block variables 
+    - var name = "plans"
+    - var hasPlans = true
+
+block content
+    section.plans 
+        h2.h2.h2--center(data-anim)= title
+        
+        .plans__list 
+            for plan in plans 
+                +plan(plan.id)
+                

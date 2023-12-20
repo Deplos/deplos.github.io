@@ -1,0 +1,36 @@
+
+
+block variables
+doctype html
+html(lang="en")
+    head
+        include includes/meta.pug
+        
+        if name
+            link(rel="stylesheet" href="/" + name + ".css")
+
+        if hasContenfulMD 
+            <script>var exports = {};</script>
+            script(
+                src="https://cdn.jsdelivr.net/npm/@contentful/rich-text-html-renderer@16.1.0/dist/rich-text-html-renderer.es5.min.js",
+                defer
+            )
+
+        if hasJs 
+            script(src="/" + name + ".js", type="module") 
+        
+        if hasForm 
+            script(src="/form.js", defer)
+        
+        if hasPlans 
+            script(src="/plans.js", defer)
+        
+
+        title #{title} — #{$info.name} 
+    body(page=$locale.currentPage, lang=$locale.currentLocale) 
+        include includes/header.pug
+
+        .container
+            block content
+
+            include includes/footer.pug

@@ -1,0 +1,45 @@
+.services
+    display flex
+    align-items start
+    gap 20px
+    flex-wrap wrap
+
+    &__list
+        display flex
+        flex-direction column
+        gap 20px
+        flex 1 0 0
+
+    .service
+        block()
+        delay(3)
+
+        display flex
+        gap 30px
+        align-items start
+        transition border-color 0.2s ease-in-out
+
+
+        &__name
+            font-size 24px
+            font-weight 600
+
+        &__icon
+            object-fit contain
+            max-width 50px
+
+        &__types
+            display flex
+            flex-wrap wrap
+            gap 10px 15px
+            list-style none
+            margin-top 20px
+            color colors.gray
+    &__text
+        margin-right 20px
+        flex 1 0 0
+
+
+    &__description
+        color colors.gray
+        margin-top 25px
