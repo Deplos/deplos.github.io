@@ -1,0 +1,1 @@
+export function getLanguage(){return document.body.getAttribute("lang")}export function getPage(){let t=document.body.getAttribute("page").slice(0,-5);return t=""===t?"index":t,t}

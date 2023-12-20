@@ -1,0 +1,1 @@
+const observer=new IntersectionObserver((e=>{e.forEach((e=>{e.isIntersecting&&e.target.classList.add("animation")}))})),animationObjects=document.querySelectorAll("[data-anim]");animationObjects.forEach((e=>observer.observe(e)));
