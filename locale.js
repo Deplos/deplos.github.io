@@ -119,7 +119,7 @@ function pugCompileLocale(locale) {
     };
 }
 
-function pugСompileAllLocales() {
+function pugCompileAllLocales() {
     return locales.map((locale) => pugCompileLocale(locale));
 }
 
@@ -130,5 +130,5 @@ function pugCompileIndex() {
 }
 
 module.exports.compileLocale = pugCompileLocale;
-module.exports.compileAllLocales = pugСompileAllLocales;
+module.exports.compileAllLocales = pugCompileAllLocales;
 module.exports.pugCompileIndex = pugCompileIndex;

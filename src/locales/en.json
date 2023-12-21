@@ -25,7 +25,7 @@
     },
     "header": {
         "button": "Sign up",
-        "notice": "Deplos is no longer available, this website is working in demo mode, the code can be found <a href='http://github.com/Deplos/website-public'>here</a>"
+        "notice": "Deplos is no longer available, this website is working in demo mode, the code can be found <a href='http://github.com/Deplos/deplos.github.io'>here</a>"
     },
     "specs": {
         "private": "Private location",
