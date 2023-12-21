@@ -3,6 +3,9 @@
 <img src="./docs/screenshot.png">
 <h1><a href="https://deplos.github.io">Deplos</a></h1>
 <p>Landing page of Deplos hosting provider, which is currently aboundoned</p>
+<a href="https://www.figma.com/community/file/1198393124994627983/deplos-web-hosting">Figma</a>
+•
+<a href="https://discord.gg/kWpmyHcjKj">Discord</a>
 </div>
 
 <br>
