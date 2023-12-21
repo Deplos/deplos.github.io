@@ -1,9 +1,8 @@
 include ../components/logo.pug
 
 header.header
-
-    .header__notice.notice
-        .notice__text !{header.notice}
+    // remove the line below to hide the notice
+    include notice.pug
 
     .header__content
         +logo
